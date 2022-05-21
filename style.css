@@ -1,0 +1,157 @@
+html {
+  overflow: hidden;
+  overflow: none;
+    padding: 0;
+    margin: 0;
+    cursor: url(cursorPoint.png), pointer;
+}
+
+body{
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    
+    
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    
+}
+main {
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+    height: 99vh;
+    padding: 7px;
+    background: black;
+  }
+ 
+  h1 {
+    margin: 0;
+  }
+  
+  section {
+    min-width: 98.1vw;
+    height: 96vh;
+    display: flex;
+    
+    font-size: 4ch;
+    background: rgb(0, 0, 0);
+    align-items: center;
+    margin: 3px;
+    
+  }
+  
+  .title {
+      transform: rotate(90deg);
+      font-size: 1em;
+      position: sticky;
+      color: white;
+  }
+  
+  
+  .premier p {
+    
+    color: white;
+    font-size: 2em;
+    
+  }
+
+
+
+  .oeilGlobe {
+    width: 6em;
+    animation: bounce 1.4s infinite alternate;
+  }
+  @keyframes bounce { 0% { transform: translateY(0); } 100% { transform: translateY(-50px); } }
+
+  .oeilOmbre{
+    width: 4em;
+    align-self: center;
+    animation: ombre 1.4s infinite alternate;
+  }
+  @keyframes ombre { 0% { transform:scale(1) ; } 100% { transform: scale(0.7); } }
+  .oeilBounce{
+      display: flex;
+      flex-direction: column;
+      
+  }
+  
+  
+  .about, .art, .contact, .homeTitle {
+    transform: rotate(270deg);
+    width: 41px;
+    font-size: 0.4em;
+    color: white;
+    margin: 1vh;
+    letter-spacing: 1em;
+  }
+  
+
+  .premier {
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.homeContain {
+  display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.deuxieme {
+   
+    z-index: 2;
+    margin-left: -9.4vw;
+}
+.troisieme  {
+    justify-content: normal;
+    z-index: 3;
+    margin-left: -95vw;
+    align-items: center;
+    
+}
+.artContent {
+  width: 80vw;
+    height: 100%;
+    margin: 2vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.artContent img {
+  width: 39vw;
+  padding: 8px;
+}
+.codeOrgasmiqueTxt h1 {
+  font-size: 0.8em;
+}
+.codeOrgasmiqueTxt {
+  color: white;
+}
+.codeOrgasmiqueTxt p {
+  color: white;
+  font-size: 0.4em;
+  font-weight: lighter;
+}
+.quatrieme {
+  z-index: 4;
+    margin-left: -95vw;
+   
+}
+.contact {
+
+
+}
+
+.trans {
+    
+  animation: trans 1.4s ease-out;
+  animation-fill-mode: forwards;
+  
+  
+}
+@keyframes trans { 0% { transform: translateX(0); } 100% { transform: translateX(-86vw); } }
+
+
+  
